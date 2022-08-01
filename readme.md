@@ -10,4 +10,36 @@ When implementing a new feature or fixing a bug, please create a new pull reques
 
 ## First setup
 
-**[TODO 05/01/2018 @vanessa-cooper]:** _It's been a while since anyone ran a fresh copy of this repo. I think it's worth documenting the steps needed to install and run the repo on a new machine?_
+**Cloning Anythink Market repo**
+
+Clone this repository locally using the following link 
+
+https://github.com/ObelusFamily/Anythink-Market-bt3f1.git.
+
+If you are facing any difficulty in cloning this repository, you can refer 
+
+https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository.
+
+**Setting up the Enviornment**
+
+ After Cloning the repo, the next step is to setup the working environment, so that things would function smoothly on your local machine.
+
+    Step1 - Install Docker
+
+        You can install docker from the following link https://docs.docker.com/get-docker/.
+
+        You can verify docker is ready by running the following commands in your terminal: 'docker -v' and 'docker-compose -v'
+
+    Step2 - Load Backend and Frontend
+
+        After successfully installing docker, run 'docker-compose' up from the project root directory to load Anythink's backend and frontend.
+
+        If Docker is working correctly, the backend should be running and able to connect to your local database.
+
+    Step3 - Verifying Backend and Frontend
+
+        Test the backend is functioning by clicking on this link http://localhost:3000/api/ping.
+
+        Test the frontend is functioning by clicking on this link http://localhost:3001/register and create account by filling in all the input credentials.
+
+Just make sure that you run all scripts on one of the containers created by docker-compose up. Also, you can use docker exec to run commands on a running container.
